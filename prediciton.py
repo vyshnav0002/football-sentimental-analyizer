@@ -20,8 +20,8 @@ RECIPIENT_EMAIL = os.getenv('RECIPIENT_EMAIL')
 NEWS_API_KEY = os.getenv('NEWS_API_KEY')
 
 # Debug check
-print(f"EMAIL_ADDRESS: {EMAIL_ADDRESS}")
-print(f"RECIPIENT_EMAIL: {RECIPIENT_EMAIL}")
+print("Environment variables loaded successfully")
+
 
 if None in (EMAIL_ADDRESS, EMAIL_PASSWORD, RECIPIENT_EMAIL, NEWS_API_KEY):
     raise ValueError("Missing environment variables. Check your .env file.")
